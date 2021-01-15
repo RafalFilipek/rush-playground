@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
+    "composite": true,
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
+    // "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -15,8 +16,7 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@opl/ui": ["libs/opl/ui/index.tsx"]
+      "@opl/ui": ["./libs/opl/ui"]
     }
-  },
-  "exclude": ["node_modules"]
+  }
 }

@@ -1,5 +1,10 @@
 import { Thing } from "@opl/ui";
 
 export default function Home() {
-  return <Thing id="c" />;
+  return (
+    <div>
+      <div>hello</div>
+      <Thing id="c" />
+    </div>
+  );
 }
