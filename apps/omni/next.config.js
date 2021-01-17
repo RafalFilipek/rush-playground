@@ -2,9 +2,10 @@ const path = require("path");
 
 const config = {
   webpack: function (config, { defaultLoaders }) {
+    return config;
+
     const resolvedBaseUrl = path.resolve(config.context, "../../");
-    defaultLoaders.babel.options.cwd =
-      "C:\\Users\\rafal\\Projects\\rush-stuff\\orange";
+    defaultLoaders.babel.options.cwd = resolvedBaseUrl;
     config.module.rules = [
       ...config.module.rules,
       {

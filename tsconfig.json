@@ -1,11 +1,14 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./apps/omni"
+  "extends": "./tsconfig.build.json",
+
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@opl/ui": ["libs/opl/ui/src/index.tsx"]
     },
-    {
-      "path": "./libs/opl/ui"
-    }
-  ]
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": []
+  }
 }

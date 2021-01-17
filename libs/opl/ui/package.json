@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "license": "MIT",
-  "__main": "dist/index.js",
+  "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
@@ -35,7 +35,7 @@
   },
   "name": "@opl/ui",
   "author": "Rafał Filipek",
-  "__module": "dist/ui.esm.js",
+  "module": "dist/ui.esm.js",
   "size-limit": [
     {
       "path": "dist/ui.cjs.production.min.js",
